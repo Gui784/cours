@@ -1,0 +1,41 @@
+/* Media Queries permet d'arranger la disposition du site en fonction des tailles des navigateurs en px-cf */
+
+/* https://viewportsizer.com/devices */
+
+.zone-adaptative{
+
+    background: firebrick;
+    color: aliceblue;
+    padding: 10px;
+
+}
+
+
+@media (min-width: 768px){
+
+	.zone-adaptative{
+		width: 750px;
+		background:rgb(255, 111, 44);
+		}
+
+}
+
+
+@media (min-width: 992px){
+
+	.zone-adaptative{
+		width: 970px;
+		background:rgb(255, 206, 44);
+		}
+
+}
+
+
+@media (min-width: 1200px){
+
+	.zone-adaptative{
+		width: 1170px;
+		background:rgb(190, 255, 39);
+		}
+        
+}

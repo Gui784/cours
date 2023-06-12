@@ -1,0 +1,67 @@
+/* commentaires en CSS */
+
+*{ 
+    /* l'étoile signifie qu'on sélectionne tout le document, c'est un sélecteur universel */
+
+    text-align: right;
+
+}
+
+body{
+
+    background: cadetblue;
+    /* couleur de fond */
+
+}
+
+header{
+
+    background-color: goldenrod;
+    color:azure;
+    /* couleur du texte */
+    height: 100px;
+    /* hauteur fixée a 100 pixels */
+
+}
+
+nav{
+
+    background-color: azure;
+    height: 70px
+}
+
+section{
+    background: skyblue;
+    height: 600px;
+
+}
+
+nav, footer{
+
+    /* je sépare les différentes balises à sélectionner par des virgules */
+    color: goldenrod;
+
+}
+
+.jaune{
+
+    /* Pour sélectionner une class en CSS, j'utilise un avant le nom que je lui ai donné */
+    background-color: azure;
+}
+
+#noir{
+
+    /* Pour cibler l'id, j'utilise un dièse */
+    background-color: black;
+    color: skyblue;
+    text-align: justify;
+    font-size: 30px;
+
+}
+
+/* Sélecteurs= class,id,balise... , Propriétés= color,text-align... , Valeurs= black,justify... */
+
+
+
+
+

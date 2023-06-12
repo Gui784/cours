@@ -1,0 +1,14 @@
+.code{
+
+    color: darkred;
+    background: darkgray;
+
+    display: inline-block;
+     /* permet de définir une largeur et une hauteur sur l'élément  */
+
+    font-style: italic;
+
+    
+
+    
+}

@@ -1,0 +1,35 @@
+*{
+
+    margin: 0;
+
+}
+
+html , body{
+
+    height: 100%;
+
+}
+
+.conteneur{
+
+    min-height: 100%;
+
+}
+
+header{
+
+    height: 100px;
+    background-color: indigo;
+
+}
+
+footer{
+
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(86, 45, 116);
+
+}
+

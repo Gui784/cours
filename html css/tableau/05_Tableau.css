@@ -1,0 +1,75 @@
+*{
+    /* L'étoile ou asterisque sélectionne tous les éléments de ma page html */
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+
+    width: 50%;
+    /* Largeur de ma page 50% de l'écran */
+
+    margin: auto;
+    /*  gestion automatique des marges pour que mon tableau soit centré */
+
+}
+
+table{
+
+    border: 5px solid rg b(0, 0, 0);
+    /* Bordure: épaisseur / type detrait / couleur */
+
+    border-collapse: collapse;
+    /* par défaut la bordure contient 2 traits, pour que le trait soit unique on utilise la propriété "collapse" */
+
+    width: 95%;
+    /* largeur du tableau par rapport à son contenu */
+
+    margin: 40px;
+    /* Marge extérieur de la balise */
+
+}
+
+thead,tfoot{
+
+    background-color: beige;
+    border: 6px solid rosybrown;
+
+}
+
+th{
+
+    border: 2px dotted beige;
+    /* Dotted = pointillés */
+
+    padding: 5px;
+    background-color: rgb(248, 219, 176);
+    /* RGB(RED GREEN BLUE ) = couleur choisit dans la palette des couleurs */
+    width: 40%;
+}
+
+td{
+
+    font-size: 100%;
+    border: 2px dotted darkgray;
+    text-align: center;
+    padding: 5px;
+
+}
+
+td:first-child{
+
+    /* 1er <td> pour aligner le texte à gauche de la première cellule de chaque rangée  */
+    
+    text-align: left;
+    background-color: bisque;
+}
+
+caption{
+
+    font-size: 40px;
+    color: black;
+    padding: 0,5em;
+    background-color: beige;
+
+}

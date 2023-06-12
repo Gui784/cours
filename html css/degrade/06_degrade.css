@@ -1,0 +1,23 @@
+.contenu{
+
+    height: 45em;
+     /* hauteur */
+
+    width: 45em;
+     /* largeur */
+
+    margin: auto;
+    /* centre la balise automatiquement */
+
+    border-radius: 50%;
+    /* arrondie les angles */
+
+    background: linear-gradient(left skyblue, magenta);
+    /* Dégrader qui démarre avec la premiére couleur a droite et la derniére à gauche */
+    /* lien vers un générateur de dégrader de couleur : www.cssgradient.io */
+
+    background: rgb(41,195,34);
+background: linear-gradient(0deg, rgba(41,195,34,1) 39%, rgba(253,45,45,1) 90%);
+
+
+}

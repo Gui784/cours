@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Raleway:wght@500&display=swap');
+
+body{
+
+    text-align: center;
+    /* aligne le texte au centre */
+    background-color: #ffff;
+    /* coleur de fond  */
+    font-family: 'Nunito Sans', sans-serif;
+    /* police d'écriture */
+    padding: 0;
+    /* écart de remplisage */
+    margin: 10px;
+
+}
+
+h1{
+
+    color: white;
+    /* couleur de h1 */
+    text-align: center;
+    height: 250px;
+    /* hauteur */
+
+}
+
+.container{
+
+    border: 1px solid #29347B;
+    /* bordure + épaisseur de la bordure + couleur de la bordure */
+    margin: 0 auto;
+    /* marge */
+    width: 55%;
+    /* largeur */
+    background-color: #29347B;
+    /* couleur du fond  */
+    height: 950px;
+    font-family: 'Shadows Into Light Two', cursive;
+
+
+
+}
+
+figure{
+
+    width: 25%;
+    margin: auto;
+    float: left;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+figcaption{
+
+    color: #ffff;
+    text-align: center;
+    font-family: 'Shadows Into Light Two', cursive;
+    margin: auto;
+
+
+}
+
+img{
+
+    float: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.clear{
+
+    clear: both;
+
+}
+
+
+
+
+
+

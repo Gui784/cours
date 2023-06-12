@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Shadows+Into+Light+Two&display=swap');
+
+.container{
+
+    background: #273978;
+    width: 50%;
+    margin: 2vh auto;
+    font-family: 'Shadows Into Light', cursive;
+    color: white;
+
+}
+
+h1{
+
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 1vh;
+
+}
+
+main{
+
+    width: 90%;
+    margin: auto;
+
+}
+
+figure{
+
+    float: left;
+    width: 22%;
+    margin: 1vh , 2vh;
+
+}
+
+figcaption{
+
+    font-size: 1.5em;
+    text-align: center;
+
+}
+
+img{
+
+    width: 200px;
+
+}
+
+.clear{
+
+    clear: both;
+
+}

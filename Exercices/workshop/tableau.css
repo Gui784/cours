@@ -1,0 +1,104 @@
+body{
+
+   font-size: 20px; 
+   text-align: center;
+   color: antiquewhite;
+    
+}
+
+
+
+#conteneur{
+
+    width: 960px;
+    background-color: cadetblue;
+    color: beige;
+    margin: 0 auto;
+    
+    
+
+}
+
+header{
+
+    background-color: rgb(54, 95, 152);
+    height: 50px;
+    text-align: center;
+
+    line-height: 60px;
+    /* définit la hauteur d'une boîte de ligne. Il est couramment utilisé pour définir la distance entre les lignes de texte */
+
+}
+
+
+
+nav{
+
+    background-color: forestgreen;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+
+}
+
+section{
+
+    background-color: cadetblue;
+    height: 500px;
+    margin: 10px;
+
+}
+
+.GZ{
+
+    border: 1px solid;
+    float: left;
+    height: 248px;
+    width: 468px;
+    background-color: blueviolet;
+
+    
+}
+
+.PZ{
+
+    border: 1px solid;
+    float: left;
+    height: 122px;
+    line-height: 122px;
+    text-align: center;
+    width: 232px;
+
+}
+
+.couleur_1{
+    background: peachpuff;
+}
+
+.couleur_2{
+    background: #7a9eb1;
+}
+
+.couleur_3{
+    background: #415865;
+}
+
+.couleur_4{
+    background: #ffe1b3;
+}
+
+footer {
+
+    background: silver;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+
+}
+
+.clear {
+    clear: both
+}
+
+
+

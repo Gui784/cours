@@ -1,0 +1,125 @@
+body{
+
+    font-size: 40px;
+    /* Taille de la police d'écriture en px */ 
+
+}
+
+h1{
+
+    background-color: aqua;
+    /* Couleur de fond */
+
+    color: brown;
+    /* Couleur du texte */
+
+}
+
+section p{
+
+    color: black;
+
+
+}
+
+section p:first-child{
+
+    color: darkmagenta;
+
+    /* 1er p dans section */
+
+    
+}
+
+section p:last-child{
+
+    color:darkblue;
+
+    /* dernier p dans section */
+
+}
+
+section p:nth-child(even){
+
+      /* Numero de l'enfant du p paire */
+
+    color: darkgray;
+
+
+}
+
+section p:nth-child(odd){
+
+    /* Numero de l'enfant du p impairs */
+
+    color: darkcyan;
+
+}
+
+section p:nth-child(3),section p:nth-child(10){
+
+    /* Deux sélecteurs séparés par une virgule les numéro 3 et 10 */
+
+    color: olivedrab;
+
+}
+.zone1{
+
+    color: chocolate;
+
+}
+
+.zone2{
+
+    color: navy;
+
+}
+
+.lime{
+
+    /* CLASS donc avant je met un . */
+
+    color: limegreen;
+
+}
+
+#zone3{
+
+    /* ID donc avant son nom je met un # */
+
+    color: firebrick;
+}
+
+#zone3:before{
+    /* Rajouter contenu avant l'ID zone3 */
+
+    content:" Avant ";
+
+    /* Content est obligatoire, les contenus ne s'affiche pas dans HTML=> attention accessibilité, on peut le laisser vide ou ajouterdes attributs a une balise attr(title) */
+
+
+    background-color: sienna;
+    
+}
+
+li:nth-of-type(2){
+
+    /* La différence entre nth-child et nth-of-type  : https://css-tricks.com/the-difference-between-nth-child-and-nth-of-type  */
+
+    background-color: aliceblue;
+    color:teal;
+
+}
+
+.zone4 span{
+
+    font-size: 60px;
+    color: mediumorchid;
+
+}
+
+span:not(.lime){
+
+    font-weight: lighter;
+
+}

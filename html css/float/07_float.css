@@ -1,0 +1,81 @@
+body{
+
+    margin: 0 auto;
+
+    /* margin: 0 auto 0 auto; -> haut droite bas gauche
+    margin: 0 ;
+    margin: 0 auto 1 ; haut | horizontal | bas */
+
+}
+
+div{
+
+    width: 90%;
+    margin: 0 auto;
+    background-color: lightslategray;
+
+}
+
+p{
+
+    background-color: lightsteelblue;
+
+}
+
+p span{
+
+    /* Sélectionne les span contenus dans le p */
+
+    background-color: rgb(255, 255, 121);
+}
+
+.boite{
+
+    height: 12vh;
+    width: 19vh;
+    padding: 6vh;
+    background: url(../float/img/Chat\ Siamois.jpg);
+    background-repeat: no-repeat;
+    border: 2px double sandybrown;
+    margin: 3vh;
+    /* taille , style , couleur de la bordure */
+
+   float: left;
+   /*effet flottant, permet de placer des balises côte à côte alors que selon le flux du web santard les élèment se places les unes au dessus de l'autre */
+
+    transition: margin 2s;
+    /* propriétée et durée  */
+   
+    
+    
+
+    /* https://outils-css.aliasdmc.fr/unites-de-longueurs-css.php
+        EM: Relative to the parent element
+ 
+        REM: Relative to the root element (HTML tag)
+ 
+        %: Relative to the parent element
+ 
+        VW: Relative to the viewport’s width
+ 
+        VH: Relative to the viewport’s height
+    */
+
+
+
+    
+}
+
+.boite:hover{
+    /* nom de class:hover modifie un message au survol de la souris */
+    
+    margin-top: 20vh;
+
+}
+
+.clear{
+
+    clear:both 
+    /* supprime l'effet flottant */
+
+}

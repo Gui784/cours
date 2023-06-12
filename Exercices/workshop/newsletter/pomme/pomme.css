@@ -1,0 +1,168 @@
+body{
+
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    font-family: "PT Sans" , sans-serif;
+    background: #ddeeaa;
+
+}
+
+#conteneur{
+
+    width: 770px;
+    margin: 0 auto;
+    text-align: left;
+    border: 2px solid #95C200;
+    background: #fff;
+
+
+}
+
+h1{
+
+    height: 258px;
+    background: url(../pomme/img/apple.jpg) no-repeat left top;
+    margin: 0;
+
+}
+
+h1 a{
+
+width: 400px;
+height: 70px;
+display: block;
+background: url(../pomme/img/title.gif) no-repeat;
+position: relative;
+left: 350px;
+top: 15px;
+
+text-indent: -5000px;
+/* Le text-indent négatif est fait pour pouvoir caher le texte hors de la page , ce que nous voulons */
+
+}
+
+ul{
+
+height: 36px;
+/* On donne une hauteur au menu , correspondant à la taille de l'image utilisé */
+
+margin: 0;
+padding: 0;
+
+background: url(../pomme/img/bg_menu.gif) repeat-x ;
+/* On met ensuite l'image de fond avec un décalage de 25 pixels vers le haut */
+
+list-style-type: none;
+
+}
+
+ul li{
+
+    float: left;
+    /* On rend les li en flottant pour pouvoir les afficher horizontalement */
+
+    text-align: center;
+
+}
+
+ul li a{
+
+    display: block;
+    /* Nous pouvons dimenssioner les a grâce à la propriété display:block; */
+
+    width: 130px;
+    line-height: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-right: 2px solid beige;
+    color: beige;
+
+}
+
+ul li:hover{
+
+    background: url(../pomme/img/bg_menu.gif) repeat-x 0 0;
+    /* 
+    repeat-x : répétition horizontale
+    repeat-y : répétition verticale 
+    */
+
+}
+
+main{
+
+    padding: 0 30px 0 100px;
+    background-image: url(../pomme/img/bg_page.gif);
+
+    background-repeat: no-repeat;
+    /* background-image ne prend que l'url , background est beaucoup plus large dans ses réglages */
+
+    background-position: 15px 15px;
+    /* Créer un espace àgauche et à droite de l'image */
+
+}
+
+main h2{
+
+    /* Mise en forme du titre de page */
+
+    color: #95C200;
+    /* couleur du texte */
+
+    padding-left: 25px;
+    /* Décalage du texte en fonction de l'image */
+
+    line-height: 25px;
+    /* on décale le texte en fonction de l'image */
+
+    font-size: 20px;
+    /* Taille de la police  */
+
+    margin: auto; 
+    border-bottom: 1px solid #95C200; 
+
+    background: url(../pomme/img/little_apple.gif) no-repeat left bottom;
+    /* Place l'image en bas à gauche en fonction du titre sans répétitions */
+
+}
+
+main h3{
+
+    margin-left: 15px;
+    padding-left: 5px;
+    border-bottom: 1px solid #95C200;
+    border-left: 2px solid #95C200;
+    color: #95C200;
+
+
+}
+
+main p{
+
+    /* Praragraphes plus propres */
+
+    text-align: justify;
+
+    text-indent: 2em;
+    /* indentation supérieure à l'etat normal pour aéré le tout */
+
+    line-height: 1.7em;
+    /* hauteur de la ligne supérieur à l'état normal pour aéré le tout */  
+
+}
+
+footer{
+
+    /* Pied/Bas de la page */
+
+    margin: 0;
+    padding-right: 10px;
+    line-height: 30px;
+    text-align: right;
+    color: #95C200;
+
+}
+
