@@ -1,0 +1,226 @@
+body{
+
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Cormorant Garamond', serif;
+
+
+}
+
+#container{
+
+    text-align: center;
+
+}
+
+.plat p{
+
+    font-weight: bold;
+
+
+
+}
+
+.plat section{
+
+    margin-right: 40em;
+    text-align: right;
+
+}
+
+.plat h2{
+
+    margin-right: 30em;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+.plat hr{
+
+    margin-right: 45em;
+    width: 330px;
+
+}
+
+.plat img{
+
+    margin-left: 37em;
+    width: 320px;
+    height: 300px;
+    float: left;
+}
+
+.salle h2{
+
+    text-align: left;
+    margin-left: 25em;
+
+}
+
+.salle hr{
+
+    margin-left: 37.5em;
+
+}
+
+.salle p{
+
+   text-align: left;
+   margin-left: 37em;
+   line-height: 20px;
+
+}
+
+.salle span{
+
+    background-color: black;
+    color: white;
+    margin-left: 20em;
+
+
+}
+
+.salle img{
+
+    margin-right: 38em;
+    width: 280px;
+    float: right;
+
+
+}
+
+.service h2{
+
+    text-align: right;
+    margin-right: 32em;
+
+}
+
+.service hr{
+
+    margin-right: 37.5em;
+
+}
+
+.service p{
+
+   text-align: left;
+   margin-left: 30em;
+   line-height: 20px;
+
+}
+
+.service span{
+
+    background-color: black;
+    color: white;
+    margin-right: 52em;
+
+}
+
+.service img{
+
+    margin-left: 37em;
+    width: 320px;
+    height: 300px;
+    float: left;
+
+}
+
+.dressage h2{
+
+    text-align: left;
+    margin-left: 25em;
+
+}
+
+.dressage hr{
+
+    margin-left: 37.5em;
+
+}
+
+.dressage p{
+
+   text-align: left;
+   margin-left: 37em;
+   line-height: 20px;
+
+}
+
+.dressage span{
+
+    background-color: black;
+    color: white;
+    margin-left: 20em;
+
+
+}
+
+.dressage img{
+
+    margin-right: 38em;
+    width: 300px;
+    float: right;
+
+
+}
+
+.gout h2{
+
+    text-align: right;
+    margin-right: 35em;
+
+}
+
+.gout hr{
+
+    margin-right: 39em;
+
+}
+
+.gout p{
+
+   text-align: left;
+   margin-left: 30em;
+   line-height: 20px;
+
+}
+
+.gout span{
+
+    background-color: black;
+    color: white;
+    margin-right: 54em;
+
+}
+
+.gout img{
+
+    margin-left: 35em;
+    width: 320px;
+    height: 320px;
+    float: left;
+
+}
+
+h3{
+
+color: brown;
+text-align: center;
+
+}
+
+
+hr{
+
+    width: 320px;
+
+}
+
+.clear{
+
+    clear: both;
+
+}
