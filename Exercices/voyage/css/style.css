@@ -1,0 +1,78 @@
+body{
+
+    background-color: #f6f6f7;
+    text-align: center;
+
+
+}
+
+h1{
+
+    color: whitesmoke;
+
+
+}
+
+header{
+
+    text-align: right;
+    text-decoration: none;
+    background: linear-gradient( rgb(45, 253, 149) , rgb(34,193,195));
+    border: solid 1px white ;
+    height: 100px;
+    
+
+}
+
+header .marque{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+
+
+}
+
+header .gradient{
+
+    width: 30px;
+    margin: left;
+
+}
+
+.gradient img{
+
+    width: 30px;
+
+}
+
+nav{
+
+    background-color: inherit;
+
+}
+
+nav ul li{
+
+    display: inline-block;
+   
+
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    color: whitesmoke;
+    justify-content: space-between;
+
+
+}
+
+.banner marquee{
+
+    background-color: rgb(34, 215, 218);
+    color: whitesmoke;
+
+}
+
