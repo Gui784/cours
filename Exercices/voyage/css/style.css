@@ -1,78 +1,387 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Kufam:wght@400;500;700&display=swap');
+ /* Import de la police Kufam de google font avec différentes graisses */
+
+html , body{
 
     background-color: #f6f6f7;
-    text-align: center;
+
+    margin: 0;
+    /* retrait du margin pour éviter les différences de résultats sur les navigateurs */
+
+    padding: 0;
+    /* retrait du padding pour éviter les différences de résultats sur les navigateurs */
+
+    font-family: "Kufam" , cursive;
+    /* On définit la police "Kufam" qu'on a importé comme police de base de la page  */
+
+    text-shadow: 1px 1px 2px black;
+    /* Le texte étant blanc sur des couleurs pour le faire ressortir on y ajoute de l'ombre (x , y , dispersion , couleur) */
+    /* Il est recommandé d'utiliser un générateur pour faire des tests et comprendre le fonctionnement https://www.cssmatic.com/ */
+
+    color: azure;
 
 
 }
 
-h1{
 
-    color: whitesmoke;
+/*                                       ------ Header ------                                                                                       */
 
-
-}
 
 header{
 
+    background: rgb(34,193,195);
+    /* Définit un background color au cas ou le dégrader ne soit pas pris en compte par le navigateur */
+    /* RGB = red green blue possibilté d'opacité en rajoutant un a */
+
+
     text-align: right;
     text-decoration: none;
-    background: linear-gradient( rgb(45, 253, 149) , rgb(34,193,195));
-    border: solid 1px white ;
-    height: 100px;
-    
 
-}
-
-header .marque{
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45, 253, 149, 0.681) 100%);
+    /* on commence sur une couleur pour finir sur une autre en faisant un dégradé de couleur ( linear-gradient ) */
+    /* deg fait aller de bas en haut , pourcentages à partir du quel commence le mélange ... Le 2éme pourcentage ou fini le mélange  */
 
     display: flex;
-    align-items: center;
-    justify-content: center;
-    float: left;
+    /* display offre plein de moyens d'agencer les blocs , il s'avére trés utile également pour le responsive , voir aussi grid  */
 
+    justify-content: space-between;
+    /*  */
+
+    height: 90px;  
 
 }
 
-header .gradient{
+.gradient{
 
-    width: 30px;
-    margin: left;
+    display: inline-block;
+    /* Pour pouvoir mettre les blocs les un à la suite des autres */
+
+    margin: 10px;
+    /* margin sur l'axe des x et des y */
+
+    height: 70px;
+    /* fixe la taille pour qu'elle soit similaire a celle de l'image  */
+
+    width: 50px;
+
+    background: black;
+
+    background: radial-gradient(ellipse, rgba(0, 0, 0, 0.76) 0%, rgba(65, 65, 65, 0.198) 20%, rgba(255,255,255,0) 60%)
+    /* Dégradé derriére l'image donnant une impression d'ombre pour faire ressortir le logo ,
+     100% est le raypn total de la balise on peut mettre circle à la place d'ellipse */
 
 }
 
 .gradient img{
 
-    width: 30px;
+    height: 70px;
 
 }
 
+h1{
+
+    display: inline-block;
+    font-size: 1.5rem;
+    color: antiquewhite;
+    vertical-align: 1.1em;
+    /* Centre manuellement le titre au milieu du bloc (vertical) et bien en face du logo */
+
+}
 nav{
 
     background-color: inherit;
-
-}
-
-nav ul li{
-
     display: inline-block;
-   
+    /* Pour changer le comportement de la nav et la placer à l'aide du display flex space between */
 
 }
 
-nav ul li a{
+nav ul {
+
+    margin: 0;
+    padding: 0;
+    /* Retire le margin et le padding par défaut de la liste  */
+
+}
+
+nav ul li {
+
+    display: inline;
+    /* dispose les items de la liste à la ligne */
+
+    list-style: none;
+    /* retire les éléments de décor d'une liste */
+
+    margin: auto 2em;
+    /* espace les items */
+
+
+}
+
+nav ul li a {
 
     text-decoration: none;
-    color: whitesmoke;
-    justify-content: space-between;
+    /* Enléve la décoration du texte ici le soulignage */
+    color: azure;
+    font-size: 1.2rem;
+    font-weight: 500;
+    /* augmente l'épaisseur de la typo à 500 */
 
+    line-height: 90px;
+    /* Augmente la hauteur de la ligne */
 
 }
 
-.banner marquee{
+
+/*                                      ------  Bandeau défilant  ------                                                                             */
+
+
+.banner {
 
     background-color: rgb(34, 215, 218);
     color: whitesmoke;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(99,170,166,1);
+    /* box shadow pour Chrome, Safari, Android... */
+    -moz-box-shadow: 0px 5px 10px 0px rgba(99,170,166,1); 
+    /* box shadow pour mozilla */
+    box-shadow: 0px 5px 10px 0px rgba(99,170,166,1); 
+    /* box shadow vert vers le bas */
+    border: 4px double white; 
+    /* border de 4px en tout avec double trait blanc */
+
+    /* compatibilité navigateurs
+    -o- pour Opera
+    -moz- pour Gecko (Mozilla)
+    -webkit- pour Webkit (Chrome, Safari, Android...)
+    -ms- pour Microsoft (Internet Explorer)
+    -khtml- pour KHTML (Konqueror)
+    */
+}
+
+marquee {
+
+    /* balise html obsoléte */
+
+    padding: 10px;
+    color: azure;
+    text-shadow: 1px 1px 3px #000000;
+    letter-spacing: 2px;
+    /* Espace entre les lettres dans la balise marquee */
+
+    word-spacing: 3px;
+    /* Espace entre les mots de la balise marquee */
+
+    font-size: medium;
+    /* Taille de la police en moyen */
 
 }
 
+
+/*                                           ------ Articles ------                                                                                */
+
+
+article{
+
+    width: 70%;
+    /* largeur */
+
+    margin: 2em auto;
+    /* Espacés les un des autres et placé au centre horizontalement */
+
+    display: flex;
+    justify-content: space-evenly;
+    /* Met des espaces égaux entre les éléments enfants */
+
+    border-radius: 15px;
+    /* Permet d'arrondir les bords */
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(99,170,166,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(99,170,166,1);
+    box-shadow: 0px 0px 10px 0px rgba(99,170,166,1);
+     /* ombre de la balise  au centre sur x et y une diffusion de la couleur sur 10 pixels et une ombre nette de 0 */
+
+}
+
+article:first-of-type{
+
+     /* cible la première balise de type article */
+
+    background: rgb(191,129,148);
+    background: linear-gradient(0deg, rgba(191,129,148,1) 0%, rgba(86,166,241,1) 100%);
+}
+
+article:nth-of-type(2){
+
+    /* cible la éem balise de type article */
+
+    background: rgb(97,227,194);
+    background: linear-gradient(0deg, rgba(97,227,194,1) 0%, rgba(70,134,195,1) 100%);
+}
+
+article:last-of-type{
+
+    /* cible la dernière balise de type article */
+
+    background: rgb(226,132,23);
+    background: linear-gradient(0deg, rgba(226,132,23,1) 0%, rgba(92,144,181,1) 75%);
+     /* pas 100% pour qu'il y ait un peu moins de jaune */
+
+}
+
+section{
+
+    width: 50%;
+    /* Chaque section prend la moitié d'article */
+
+    text-align: center;
+    /* Aligne le contenu au centre */
+
+    margin: 2em;
+
+}
+
+section .text{
+
+    border-radius: 15px;
+    color: azure;
+
+}
+
+article:first-of-type .text{
+
+    /* Cible la section de text du premier article */
+
+    text-align: left;
+
+}
+
+article:last-of-type .text{
+
+    /* Cible la section de text du dernier article */
+    text-align: right;
+
+}
+
+section .img{
+
+    margin: auto;
+
+}
+
+section img{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+
+    overflow: hidden;
+    /* Cache l'image qui dépasse les border radius */
+    
+}
+
+footer{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0.5em 1em;
+    height: 90px;
+    background: rgb(45, 253, 149);
+    background: linear-gradient(0deg, rgba(45, 253, 149, 0.681) 0%, rgba(34,193,195,1) 100%); /* même qu'en haut mais inversé */
+    -webkit-box-shadow: 0px -5px 10px 0px rgba(99,170,166,1); 
+    -moz-box-shadow: 0px -5px 10px 0px rgba(99,170,166,1);
+    box-shadow: 0px -5px 10px 0px rgba(99,170,166,1);/* box shadow vert vers le haut*/
+
+}
+
+footer small{
+
+    margin: 0;
+    padding: 0;
+    line-height: 90px;
+    color: azure;
+
+}
+
+.paiement i{
+
+    font-size: 1.4em;
+    padding: 0 0.4em;
+    color: azure;
+    line-height: 90px;
+
+}
+
+@media screen and (max-width : 800px){
+
+    nav ul li{
+
+        margin: auto 1em;
+
+    }
+
+    article{
+
+        flex-wrap: wrap;
+        width: 90%;
+
+    }
+
+    section .img{
+
+        margin: 2em auto 0;
+
+    }
+
+    footer{
+
+        height: auto;
+        justify-content: center;
+
+    }
+
+    footer small{
+
+        line-height: 150%;
+
+    }
+
+    .paiement i{
+
+        line-height: 150%;
+
+    }
+
+}
+
+@media screen and (max-width : 650px){
+
+    nav{
+
+        margin-right: 1em;
+
+    }
+
+    nav ul{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    nav ul li{
+
+        line-height: 150%;
+        font-size: 1rem;
+        line-height: 30px;
+
+    }
+
+    section{
+        
+        width: 100%;
+
+    }
+
+}
