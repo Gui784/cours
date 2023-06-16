@@ -1,0 +1,225 @@
+body{
+
+    font-family: 'Caveat Brush', cursive;
+    background-color: antiquewhite;
+
+}
+
+/*                                                 ----- Header -----                                                                               */
+
+header{
+
+    width: 100%;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: url(../img/woddPlank.jpg);
+    
+
+}
+
+header img{
+
+    width: 20%;
+    margin-left: 50em;
+    height: 200px;
+    position: relative;
+    
+
+}
+
+.chevron {
+
+    text-align: center;
+    height: 50px;
+    
+
+}
+
+.triangle{
+
+    width: 0px;
+    margin-left: 50em;
+    height: 0px;
+    margin-top: 15em;
+    border-style: solid;
+    border-width: 0 0 132px 132px;
+    border-color: transparent transparent #E53F6F transparent;
+    transform: rotate(270deg);
+
+}
+
+
+.trait{
+
+    background-color: #E53F6F;
+    width: 15px;
+    margin-left: 15px;
+    height: 7px;
+
+}
+
+h1 span {
+
+    /*header*/
+
+  font-size: 40px;
+  display: inline;
+  vertical-align: top;
+  position: relative;
+  margin-left: 0;
+  
+}
+
+h1 span:after {
+
+  /*header*/
+
+  top: 15px;
+  content: "-";
+  position: absolute;
+  left: 0;
+  
+
+}
+
+nav{
+
+    background-color: inherit;
+    display: inline-block;
+    /* Pour changer le comportement de la nav  */
+    margin-left: 22em;
+
+}
+
+nav ul {
+
+    margin: 0;
+    padding: 0;
+    /* Retire le margin et le padding par défaut de la liste  */
+    text-align: right;
+
+    
+
+}
+
+nav ul li {
+
+    display: inline-block;
+    /* dispose les items de la liste à la ligne */
+
+    list-style: none;
+    /* retire les éléments de décor d'une liste */
+
+    margin: auto 2em;
+    /* espace les items */
+
+
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    /* Enléve la décoration du texte ici le soulignage */
+
+    color: rgb(0, 0, 0);
+
+    font-size: 1.2rem;
+
+    line-height: 120px;
+    /* Augmente la hauteur de la ligne */
+
+   
+}
+
+/*                                                    ----- Main -----                                                                            */
+
+main hr{
+
+    background-color: #E53F6F;
+    width: 25px;
+    margin-left: 15px;
+    height: 7px;
+    text-align: center;
+
+}
+
+
+.story p, h2, hr{
+
+    background-color: white;
+    float: left;
+    height: 100%;
+
+}
+
+.story img{
+ 
+
+    float: right;
+    /* Place l'image a droite de la page */
+    
+
+}
+
+.fare p, h2, hr{
+
+    text-align: center;
+    background-color: white;
+    float: left;
+
+}
+
+.fare img{
+
+    float: left;
+
+}
+
+.local p, h2, hr{
+
+    text-align: center;
+    background-color: white;
+    
+
+
+}
+
+.local img{
+
+    float: right;
+    position: relative;
+
+
+}
+
+.menu {
+
+    float: right;
+    position: relative;
+    width: 70%;
+
+
+}
+
+footer{
+
+    width: 100%;
+    display: flex;
+    height: 700px;
+    background: url(../img/pattern.jpg);
+    justify-content: space-between;
+
+}
+
+.logo{
+
+    /* float: right; */
+    /* font-size: 1.4em; */
+    padding: 0 0.4em;
+    /* color: azure; */
+    line-height: 90px;
+    height: 150px;
+    width: 150px;
+}
