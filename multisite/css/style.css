@@ -196,7 +196,7 @@ nav a:hover {
     color: white;
 }
 
-.activ {
+.active {
     background: #2c3e50;
     color: white;
 }
@@ -392,6 +392,650 @@ img[src="img/toureiffel.jpg"]{
     right: 0;
     position: relative;
     width: 50px;
-    height: 25px;
+    height: 50px;
+
+}
+
+/* le bouton pour remonter en haut de la page */
+
+button{
+
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    font-size: 250%;
+    color: navy;
+
+}
+
+.trente{
+
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+    background:saddlebrown;
+    color: bisque;
+    font-weight: bold;
+
+}
+
+.cinquante{
+
+    width: 50%;
+    padding: 20px;
+    font-size: 22px;
+    background: olivedrab;
+    color: beige;
+    font-weight: bold;
+    margin-top: 7px;
+
+
+}
+
+.cent{
+
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    background: darkcyan;
+    color: rgb(245, 226, 201);
+    font-weight: bold;
+    margin-top: 7px;
+
+}
+
+.p{
+
+    padding: 0;
+
+}
+
+/*                                                                    --------- Float ----------                                                   */
+
+.float{
+
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    background: lightseagreen;
+    border: 2px solid rgb(12, 10, 29);
+
+}
+
+.dernier{
+
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 25px;
+    background: lightseagreen;
+    border: 2px solid rgb(12, 10, 29);
+
+}
+
+.clear{
+
+    clear: both;
+
+}
+
+/* *****************EXERCICE FLOAT***************** */
+
+.zone{
+
+    height: 70px;
+    background: #3a4750;
+
+}
+
+.zone1, .zone2, .zone3, .zone4{
+
+    height: 250px;
+    width: 25%;
+    float: left;
+
+}
+
+.zone1{
+
+    background: #2D5C7F;
+
+}
+
+.zone2{
+
+    background: #FFF1A8;
+
+}
+
+.zone3{
+
+    background: #FF8F56;
+
+}
+
+.zone4{
+
+    background: #984A59;
+
+}
+
+/*                                          ------------- Flexbox ---------------                                                                   */
+
+.flex div{
+
+    width: 150px;
+    height: 150px;
+    background: teal;
+    text-align: center;
+    font-size: 50px;
+    color: beige;
+    border: 10px outset rgb(66, 21, 245);
+
+}
+
+.flex{
+
+    display: flex;
+    /* justify-content: space-around; */
+    justify-content: space-between; 
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+}
+
+#zoning1{
+
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgray;
+    margin: auto;
+
+}
+
+#zoning1 header{
+
+    height: 70px;
+    background: cadetblue;
+    
+}
+
+#zoning1 aside{
+
+    height: 525px;
+    float: left;
+    width: 20%;
+    background: #98f32f;
+
+}
+
+#zoning1 section{
+
+    float: left;
+    background: darkcyan;
+    height: 525px;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*                                                        -------Zoning 2--------                                                                    */
+
+#zoning2{
+
+    background: firebrick;
+    width: 500px;
+    text-align: center;
+    text-shadow: 1px 1px 1px darkgrey;
+    margin: auto;
+
+}
+
+#zoning2 header{
+
+    height: 70px;
+    background: #15b7e8;
+
+}
+
+#zoning2 aside{
+
+    height: 525px;
+    float: left;
+    width: 20%;
+    background: #063274;
+    color: white;
+
+}
+
+#zoning2 .middle{
+
+    float: left;
+    background: #526dc4;
+    height: 525px;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+
+/*                                                    Zoning 3                                                                                    */
+
+#zoning3{
+
+    background: #2980b9;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgray;
+    color: white;
+    margin: auto;
+
+}
+
+#zoning3 section{
+
+    height: 525px;
+    float: left;
+    width: 50%;
+    background: #bccf2e;
+    margin: 0;
+    padding: 0;
+
+}
+
+#zoning3 footer{
+
+    height: 70px;
+    float: left;
+    width: 100%;
+    background: #7745bc;
+    color: black;
+    text-align: center;
+
+}
+
+#zoning3 section:nth-of-type(2){
+
+    background: #0c5991;
+
+}
+
+/*                                                 -------Zoning 4-------                                                                          */
+
+#zoning4{
+
+    text-shadow: 1px 1px 2px darkgray;
+    background: #fff;
+    text-align: center;
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 700px;
+
+}
+
+#zoning4 header{
+
+    height: 90px;
+    background: darkred;
+
+}
+
+#zoning4 nav{
+
+    height: 50px;
+    background: #54970c;
+
+}
+
+#zoning4 section{
+
+    height: 500px;
+    background: rgb(128, 59, 59);
+    margin: 20px;
+    padding: 0;
+
+}
+
+#zoning4 footer{
+
+    height: 75px;
+    background: rgb(25, 77, 25);
+    text-align: center;
+
+}
+
+#zoning4 section , footer{
+
+    color: rgb(255, 255, 255);
+
+}
+
+/*                                             ------Zoning 5-------                                                                               */
+
+#zoning5{
+
+    background: paleturquoise;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgray;
+    border: 2px solid black;
+    margin: 0 auto;
+    padding: 0;
+    font-weight: bolder;
+    /* plus gras que le parent */
+    color: white;
+
+}
+
+#zoning5 header{
+
+    background: #063274;
+    height: 90px;
+
+}
+
+#zoning5 nav{
+
+    height: 50px;
+    background: plum;
+    border-bottom: 8px solid #FF8F56;
+
+}
+
+#zoning5 .section{
+
+    background: #0c5991;
+    margin: 20px;
+    padding: 0;
+
+}
+
+#zoning5 .section .z1 , .z2 , .z3 , .z4{
+
+    height: 250px;
+    width: 50%;
+    float: left;
+
+}
+
+#zoning5 .z1 , .z4{
+
+    background: rgb(0, 109, 0);
+
+}
+
+#zoning5 .z2 , .z3{
+
+    background: rgb(1, 149, 58);
+
+}
+
+#zoning5 footer{
+
+    text-align: center;
+    height: 75px;
+    background: rgb(83, 169, 2);
+
+}
+
+#zoning5 section , footer{
+
+    color: black;
+
+}
+
+/***********************Zoning 6************************/
+
+#zoning6{
+
+    width: 800px;
+    margin: 0 auto;
+    color: white ;
+    text-align: center;
+}
+
+#zoning6 header{
+
+    background: #40a497;
+    height: 180px;
+}
+
+.haut1{
+
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #203562;
+
+}
+
+.haut2{
+     
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: #3E588F;
+
+}
+
+.haut3{
+
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #203562;
+
+}
+
+#zoning6 nav{
+
+    background: #0B5269;
+    height: 30px;
+    border: none;
+
+}
+
+#zoning6 aside{
+
+    background:#446878;
+    width: 20%;
+    height: 650px;
+    float: left;
+
+}
+
+#zoning6 section{
+
+    width: 80%;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+}
+
+.slideshow{
+
+    background: #314A52;
+    height: 250px;
+
+}
+
+#zoning6 .a{
+
+    background: #C0C5CD;
+    width: 50%;
+    height: 250px;
+    float: left;
+
+}
+
+#zoning6 .b{
+
+    background: #203562;
+    width: 50%;
+    height: 250px;
+    float: left;
+
+}
+
+#zoning6 .c, .e{
+
+    background: #C0C5CD;
+    width: 25%;
+    height: 150px;
+    float: left;
+
+}
+
+#zoning6 .d, .f{
+
+    background: #203562;
+    width: 25%;
+    height: 150px;
+    float: left;      
+
+}
+
+#zoning6 footer{
+
+    background: #0B5269;
+    height: 50px;
+    color: white ;
+
+}
+
+/***********************FIN ZONING**********************/
+
+/***********************TABLEAUX**********************/
+
+.tableau table{
+
+    border-collapse: collapse;
+    border: 2px solid rgb(196, 21, 1);
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+    
+}
+
+/* th{
+    
+    border: 1px solid darkblue;
+    width: 25%;
+
+} */
+
+/* td{
+    
+    border: 1px solid darkblue;
+    font-size: 100%;
+    text-align: center;
+    padding: 5px;
+
+} */
+
+.tableau thead , .tableau tfoot{
+
+    background: rgb(0, 113, 157);
+    border: 1px solid rgb(196, 21, 1);
+
+}
+
+.tableau tbody{
+
+    border: 1px solid rgb(196, 21, 1);
+
+}
+
+.tableau th{
+
+    border: 1px solid rgb(196, 21, 1);
+    padding: 5px;
+    width: 20%;
+    vertical-align: middle;
+
+}
+
+.tableau td{
+
+    border: 1px solid rgb(196, 21, 1);
+    font-size: 80%;
+    padding: 5px;
+    text-align: center;
+
+}
+
+/***********************FIN TABLEAU**********************/
+
+/***********************LISTES**********************/
+
+ul.fruit{
+
+    list-style: none;
+
+}
+
+ul.fruit li{
+
+    display: inline;
+    margin: 15px;
+
+}
+
+li .fa{
+
+    font-size: 90%;
+    color: rgb(0, 0, 0);
+
+}
+
+li .fa:hover{
+    
+    font-size: 150%;
+    color: cornflowerblue;
+
+}
+
+.imbriquee , .imbriquee ul{
+
+    padding-left: 15px;
+
+}
+
+.imbriquee{
+
+    cursor: pointer;
+    
+}
+
+.imbriquee ul{
+
+    display: none;
+
+}
+
+.europe:hover ul , .asie:hover ul{
+
+    display: block;
+
+}
+
+.imbriquee li ul li:hover{
+
+    font-size: 200%;
+    background: rgb(255, 143, 83);
+    display: inline;
+    box-shadow: 5px 10px 10px darkgrey;
+    transition: 0.5s;
 
 }
