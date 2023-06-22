@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Permet de définir le language utilisé et la langue -->
+
+<html lang="fr">
+<!-- Permet d'indiquer la langue de la page -->
+
+<head>
+    <!-- Tête du document , non visible sur le site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Liens et menu</title>
+    <!-- Titre du site apparaissant par exemple sur une recherche google , sur l'onglet ... -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Lien entre le document HTML et le fichier CSS -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <!--Lien pour les polices utilisé via "Google-Font"-->
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Lien pour le Font-Awesome ( Icones ) ici en local mais d'habitude sur le site cdnjs -->
+
+    <meta name="description" content="Les liens et menu HTML/CSS">
+    <!-- Description sous le titre dans la recherche google -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+</head>
+
+<body>
+
+<!-- CORPS du document -->
+
+    <header>
+    <!-- Zone du haut de la page -->
+    
+    <div id="logo">
+
+        <a href="#logo">
+
+            <button type="button">
+
+                <i class="fa-thin fa-dollar-sign"></i>
+
+            </button>
+
+        </a>
+
+        <img src="img/téléchargement (1).png" alt="logo">
+
+    </div>
+
+    <div>
+
+        <h1>Mon premier site en HTML/CSS</h1>
+
+    </div>
+
+    <div id="social">
+
+        <a href="https://www.instagram.com/" target="_blank"> 
+
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+
+        </a>
+
+        <a href="https://fr-fr.facebook.com/"
+        target="_blank">
+
+        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+    
+        </a>
+        
+    </div>
+
+    <div class="clear"></div>
+
+    </header>
+
+    <nav>
+
+    <!-- Zone du menu , les liens pour naviguer sur le site -->
+
+    <div class="ancreNav">
+
+        <a href="index.html">Structure</a>
+        <a href="texte.html">Texte</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="position.html">Position</a>
+        <a href="zoning.html">Zoning</a>
+        <a href="tableau.html">Tableau</a>
+        <a href="liste.html">Liste</a>
+        <a href="lien_menu.html" >Lien Menu</a>
+        <a href="formulaire.html">Formulaire</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="animation.html" class="active">Animation</a>
+
+    </div>
+
+    </nav>
+
+    <main>
+        
+        <h2>Animation</h2>
+
+        <section>
+
+            <h3>Infobulle</h3>
+
+            <div class="infoBulle">
+
+                <p>
+                    <a href="#">Passer la souris ! <span>Salut je suis un popup</span></a>
+                </p>
+
+                <p>
+                    <a href="#">Ici aussi ! <span>Salut un autre popup</span></a>
+                </p>
+
+                <p>
+                    <a href="#">Une fois encore ! <span>Salut encore un popup</span></a>
+                </p>
+
+            </div>
+
+        </section>
+
+        <section>
+
+            <h3>Effets au survol avec transitions et filtres CSS</h3>
+
+            <ul class="imgEffets">
+
+                <li><img src="img/survol_img1.jpg" alt=""></li>
+                <li><img src="img/survol_img2.jpg" alt=""></li>
+                <li><img src="img/survol_img3.jpg" alt=""></li>
+                <li><img src="img/survol_img4.jpg" alt=""></li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h3>Rotation d'un menu en CSS3</h3>
+
+            <article id="menuRotate">
+
+                <dl class="menu">
+
+                    <dt class="btnRot">Partager</dt>
+                    <dd><a href="#">...</a></dd>
+                    <dd><a href="#">Delicious</a></dd>
+                    <dd><a href="#">Facebook</a></dd>
+                    <dd><a href="#">Twitter</a></dd>
+
+                </dl>
+
+                <div class="masque"></div>
+                <div class="ombre"></div>
+
+            </article>
+
+        </section>
+
+        <div class="clear"></div>
+
+    </main>
+
+    <footer>
+
+        <small>
+
+            &copy; Guillaume 2023
+
+
+        </small>
+
+    </footer>
+
+</body>
+
+
+</html>

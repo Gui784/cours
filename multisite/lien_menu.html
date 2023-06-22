@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!-- Permet de définir le language utilisé et la langue -->
+
+<html lang="fr">
+<!-- Permet d'indiquer la langue de la page -->
+
+<head>
+    <!-- Tête du document , non visible sur le site -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Liens et menu</title>
+    <!-- Titre du site apparaissant par exemple sur une recherche google , sur l'onglet ... -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Lien entre le document HTML et le fichier CSS -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+    <!--Lien pour les polices utilisé via "Google-Font"-->
+
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <!-- Lien pour le Font-Awesome ( Icones ) ici en local mais d'habitude sur le site cdnjs -->
+
+    <meta name="description" content="Les liens et menu HTML/CSS">
+    <!-- Description sous le titre dans la recherche google -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+
+
+</head>
+
+<body>
+
+<!-- CORPS du document -->
+
+    <header>
+    <!-- Zone du haut de la page -->
+    
+    <div id="logo">
+
+        <a href="#logo">
+
+            <button type="button">
+
+                <i class="fa-thin fa-dollar-sign"></i>
+
+            </button>
+
+        </a>
+
+        <img src="img/téléchargement (1).png" alt="logo">
+
+    </div>
+
+    <div>
+
+        <h1>Mon premier site en HTML/CSS</h1>
+
+    </div>
+
+    <div id="social">
+
+        <a href="https://www.instagram.com/" target="_blank"> 
+
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+
+        </a>
+
+        <a href="https://fr-fr.facebook.com/"
+        target="_blank">
+
+        <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+    
+        </a>
+        
+    </div>
+
+    <div class="clear"></div>
+
+    </header>
+
+    <nav>
+
+    <!-- Zone du menu , les liens pour naviguer sur le site -->
+
+    <div class="ancreNav">
+
+        <a href="index.html">Structure</a>
+        <a href="texte.html">Texte</a>
+        <a href="selecteurs.html">Selecteurs</a>
+        <a href="images.html">Images</a>
+        <a href="position.html">Position</a>
+        <a href="zoning.html">Zoning</a>
+        <a href="tableau.html">Tableau</a>
+        <a href="liste.html">Liste</a>
+        <a href="lien_menu.html" class="active">Lien Menu</a>
+        <a href="formulaire.html">Formulaire</a>
+        <a href="multimedia.html">Multimedia</a>
+        <a href="animation.html">Animation</a>
+
+    </div>
+
+    </nav>
+
+    <main>
+
+        <h2>Liens & Menus</h2>
+
+        <div class="ancre">
+
+            <a href="#lien">Les liens</a>
+            <a href="#menu">Les menus</a>
+            <a href="#menuDeroulant">Les menus déroulants</a>
+
+        </div>
+
+        <section id="lien">
+
+            <h3>Les liens</h3>
+
+            <a href="http://codepen.io" target="_blank" title="Se rendre sur le site de CodePen">
+            CodePen is a social development environment for front-end designers and developers
+            </a>
+
+            <br>
+
+            <a href="files/cv.doc">Télécharger mon CV</a>
+
+            <br>
+
+            <a href="files/cv.pdf" target="_blank">Voir mon CV</a>
+
+            <br>
+
+            <a href="#" onclick="window.print()">Imprimer la page</a>
+
+            <br>
+
+            <p> Cliquez <a href="index.html"> ici </a> pour vous rendre à l'accueil </p>
+
+        </section>
+
+        <section id="menu">
+
+            <h3>Les menus</h3>
+
+            <nav>
+
+                <ul>
+
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Parcours</a></li>
+                    <li><a href="#">Compétences</a></li>
+                    <li><a href="#">Réalisation</a></li>
+                    <li><a href="#">Contact</a></li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+
+        <section id="menuDeroulant">
+
+            <h3>Les menus Déroulants</h3>
+
+            <nav>
+
+                <ul class="niveau1">
+
+                    <li>
+
+                        <a href="#">Accueil</a>
+
+                    </li>
+
+                    <li class="sousMenu">
+
+                        <a href="#">Formation</a>
+
+                        <ul class="niveau2">
+
+                            <li>
+
+                                <a href="#">Etudiant</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">Emploi du temps</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">Recherche d'emploi</a>
+
+                            </li>
+
+                            <li>
+
+                                <a href="#">Documents</a>
+
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">Informations</a>
+
+                    </li>
+
+                    <li class="sousMenu">
+
+                        <a href="#">Cours</a>
+
+                        <ul class="niveau2">
+
+                            <li><a href="#">Internet</a></li>
+                            <li><a href="#">HTML / CSS</a></li>
+                            <li><a href="#">CMS</a></li>
+                            <li><a href="#">Stats</a></li>
+                            <li><a href="#">Réseaux sociaux</a></li>
+                            <li><a href="#">Référencement</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Cahier des charges</a></li>
+                            <li><a href="#">Photoshop</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li>
+
+                        <a href="#">Mon CV</a>
+
+                    </li>
+
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </section>
+        
+    </main>
+
+
+
+
+
+    <footer>
+
+    <!-- Zone du bas de la page : liens administratifs , contact , liens ... -->
+
+    <small>
+
+        <p>&copy; 2023 Guillaume </p>
+
+    </small>
+
+    </footer>
+    
+    
+</body>
+</html>
