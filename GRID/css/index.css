@@ -1,0 +1,66 @@
+.wrapper0, .wrapper1{
+
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 3vh;
+
+}
+
+.wrapper2{
+
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+div:not(p){
+
+    column-rule-color: antiquewhite;
+
+}
+
+.wrapper{
+
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5 , 100px);
+    grid-template-rows: repeat(5 , 100px);
+
+}
+
+.c{
+
+    background-color: rgb(122, 195, 122);
+
+}
+
+div.c{
+
+    border: 2px solid rgb(19, 104, 86);
+
+}
+
+div.vide{
+
+    border: 2px solid rgb(5, 5, 37);
+
+}
+
+.wrapper0 , .wrapper1{
+
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    /* EMMET gtc + tab */
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 3px;
+
+}
+
+div.wrapper1 div:nth-child(1){
+
+    background-color: rgb(78, 22, 78);
+    grid-column-start: 1;
+    /* Ma premiére div commence à la premiére ligne de la grille */
+    
+}
