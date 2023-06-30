@@ -1,0 +1,78 @@
+/* CSS basic pour les couleurs... */
+
+.container>div,
+.container_2>div,
+.container_3>div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: rgb(137, 137, 137);
+
+}
+
+
+.container>div:nth-child(1n),
+.container_2>div:nth-child(1n),
+.container_3>div:nth-child(1n){
+    /* "n" est tous les entiers non négatifs à partir de 0 */
+
+    background-color: rgb(113, 93, 163);
+
+
+}
+
+.container>div:nth-child(2n),
+.container_2>div:nth-child(2n),
+.container_3>div:nth-child(2n){
+    /* "2n" Représente les lignes paires d'un tableau*/
+    /* "2n+1" Représente les lignes impaires d'un tableau */
+
+    background-color: rgb(23, 58, 141);
+    
+
+}
+
+.container>div:nth-child(3n),
+.container_2>div:nth-child(3n),
+.container_3>div:nth-child(3n){
+
+    background-color: rgb(102, 37, 119);
+    
+
+}
+
+.container>div:nth-child(4n),
+.container_2>div:nth-child(4n),
+.container_3>div:nth-child(4n){
+
+    background-color: rgb(95, 36, 69);
+    
+}
+
+/* CSS Grid */
+
+.container{
+
+    display: grid;
+    grid-gap: 3px;
+
+}
+
+.container_2{
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 3px;
+
+}
+
+.container_3{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    grid-gap: 3px;
+
+}
