@@ -1,0 +1,156 @@
+body{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.top{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.middle img{
+
+    width: 250px;
+
+}
+
+.left .btn{
+
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid grey;
+    background: transparent;
+
+}
+
+.right{
+
+    justify-content: space-around;
+
+}
+
+.right a{
+
+    text-decoration: none;
+    color: black;
+    border-right: 1px solid lightgray;
+    margin-right: 15px;
+    padding-right: 15px;
+
+}
+
+.right .connexion{
+
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    width: 125px;
+    height: 40px;
+    background: transparent;
+    
+}
+
+.right .abonner{
+
+    border-radius: 30px;
+    width: 125px;
+    height: 40px;
+    background: transparent; 
+    background-color: #fc3;
+    border: none;
+
+}
+
+.navbar ul{
+
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    border-top: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+
+}
+
+.navbar a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    margin: 10px ;
+    font-weight: bold;
+
+}
+
+.active a:hover{
+
+    color: #1ea0e6;
+    text-decoration: underline;
+
+}
+
+.navbar li{
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.navbar ul li:nth-of-type(3){
+
+    border-right: 1px solid lightgray;
+
+}
+
+.navbar ul li:nth-of-type(12){
+
+    border-right: 1px solid lightgray;
+
+}
+
+.navbar ul li:nth-child(13) a{
+
+    color: grey;
+
+}
+
+.navbar ul li:nth-of-type(14) a{
+
+    color: grey;    
+
+}
+
+nav a:hover{
+
+    color: #1ea0e6;
+
+}
+
+.navbar ul li:nth-child(14) a:hover{
+
+    color: #1ea0e6;    
+
+}
+
+.navbar ul li:nth-child(13) a:hover{
+
+    color: #1ea0e6;       
+
+}
+
+.soldes{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.soldes img{
+
+    width: 50%;
+    height: 200px;
+
+} 
