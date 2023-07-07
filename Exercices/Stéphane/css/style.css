@@ -1,0 +1,131 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 15px black;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* ------------------- HEADER ---------------- */
+
+.top{
+
+    background: darkred;
+    /* height: 150px; */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+/* Le chevron est utilisé pour sélectionner les enfants directs de .top */
+
+.top>div{
+
+    background: orange;
+    width: 400px;
+    height: 100px;
+
+}
+
+.orange{
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.orange div{
+
+    background: brown;
+    height: 90px;
+    width: 90px;
+    margin: 10px;
+    
+    
+}
+
+/* ------------- FIN DIV TOP --------------- */
+
+/* ------------- NAV ------------ */
+
+nav ul{
+
+    width: 100%;
+    display: flex;
+
+
+}
+
+nav ul li{
+
+    width: 20%;
+    height: 45px;
+    list-style: none;
+    background: chocolate;
+    font-size: 2rem;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    /* Justify-content = Centre les éléments sur l'axe horizontal */
+    align-items: center;
+    /* Align-items = Centré les éléments dans l'axe vertical */
+
+
+}
+
+/* --------------- FIN HEADER --------- */
+
+/* ---------------------------------- CONTAINER --------------------------- */
+
+.container{
+
+     display: flex;
+
+}
+
+.container aside{
+
+     background: purple;
+     width: 20%; 
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+
+
+}
+
+.container aside div{
+
+    background: pink;
+    width: 60%;
+    height: 100px;
+
+}
+
+.container .aqua{
+
+     background: aqua;
+     width: 80%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+
+}
+
+.aqua div{
+
+    background: midnightblue;
+    width: 190px;
+    height: 190px;
+    margin: 40px;
+    padding: 40px;
+    color: beige;
+
+
+}
+
