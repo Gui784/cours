@@ -26,12 +26,15 @@ let valeurs = [3, 11, 7, 2, 9, 10];
 
 let max = valeurs[0];
 
-for (let i = 1; i < valeurs.length; i++){
+valeurs.forEach( function (valeur) {
 
-    if (valeurs[i]);
+    if (valeur > max) {
+        max = valeur;
+    }
 
-}
+} )
 
+console.log(max);
 /*
 * EXERCICE 3 - les tableaux
 * Ecrivez un programme qui crée un tableau contenant les noms des trois mousquetaires, Athos, Porthos et Aramis ;

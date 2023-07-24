@@ -151,7 +151,7 @@ console.log(monObjet.methode1());
 
 
 // Exemple
-let chien = {
+let chiene = {
     nom: "Rex",
     couleur: "blanc",
     age: 4,
