@@ -1,0 +1,11 @@
+<h2>Mon Post</h2>
+
+<li>
+<h4>Titre</h4>
+<p>Contenu</p>
+<button id = 'like' (click)="onLikeClick()" [style.display]="likeVisible ? 'block' : 'none'">J’aime</button>
+<button id = 'nolike' (click)="onNoLikeClick()" [style.display]="!likeVisible ? 'block' : 'none'">Je n'aime pas</button>
+</li>
+  <textarea [(ngModel)]="comment" (ngModelChange)="onCommentChange($event)"></textarea>
+ <p>Commentaires : {{ comment }}</p>
+

@@ -1,0 +1,136 @@
+*{
+
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+.headerHaut .navbar{
+
+    float: right;  
+}
+
+.list ul li{
+    list-style: none;
+    margin: 15px;
+}
+.list ul {
+    background-color: rgba(238, 238, 238, 0.75);
+}
+
+.list ul li a{
+    text-decoration: none;
+    color: rgb(25, 25, 25);
+}
+
+.navbar-toggler{
+
+    border: 1px solid white;
+
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+header h1, header h4{
+
+    color: white;
+    text-align: center;
+    
+}
+
+.sliders{
+
+    top: 500px;
+
+}
+
+.sliders h3{
+
+    color: black;
+    margin-left: 400px;
+    margin-top: 75px;
+
+
+}
+
+.clear{
+
+    clear: both;
+
+}
+
+.carousel{
+    position: absolute;
+}
+
+.headerHaut{
+    position: relative;
+}
+
+.container .navbar{
+
+    top: 450px;
+    position: relative;
+
+}
+
+.btn-group{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.sliders{
+
+    position: relative;
+
+}
+
+.navbar .btn:last-child{
+    background-color: rgba(17, 200, 41, 0.63);
+    border: none;
+    border-radius: 0;
+}
+
+#carouselExample1,#carouselExample2,
+#carouselExample3,#carouselExample4{
+
+    margin-left: 200px;
+    width: 350px;
+    height: 150px;
+    margin-top: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.textCarousel{
+
+    float: right;
+
+}
+
+.btn-group1 .btn{
+
+    border: 1px solid black;
+    float: right;
+
+}
+
+.basdePage{
+
+    display: flex;
+    flex-direction: row;
+    margin-top: 950px;
+
+}
+
+.basdePage img{
+
+    height: 100px;
+    width: 150px;
+
+}

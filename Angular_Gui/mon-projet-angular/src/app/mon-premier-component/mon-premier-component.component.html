@@ -1,0 +1,7 @@
+<li class="list-group-item">
+  <div style="width: 20px; height: 20px; background-color: green;" [ngStyle] = "{background : getColor() }" ></div>
+
+  <p>Etudiant : {{ persoName }} -- Statut {{ getStatus() }}</p>
+  <input type="text" class="form-control" [(ngModel)] = 'persoName'>
+  <div>{{ persoName | lowercase }}</div>
+</li>

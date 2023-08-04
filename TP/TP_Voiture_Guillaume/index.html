@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TP voiture</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./style/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+ <header>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./Annexes/background.jpg" class="d-block w-100" alt="Mercedes">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Annexes/Dodge_Viper_gts.jpg " class="d-block w-100" alt="Dodge">
+                </div>
+                <div class="carousel-item">
+                    <img src="./Annexes/nissan_skyline_gtr.jpg" class="d-block w-100" alt="Nissan">
+                </div>
+            </div>
+        </div>
+
+        <div class="headerHaut">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon"><i class="fa-solid fa-bars" style="color: #9d9b9b;"></i></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="collapse list" id="navbarToggleExternalContent">
+                <ul class="p-2">
+                    <li><a class="text">Louer une voiture</a></li>
+                    <li><a class="text">Louer un utilitaire</a></li>
+                    <li><a class="text">Réserver un chauffeur</a></li>
+                    <li><a class="text">Découvrer nos agences</a></li>
+                    <li><a class="text">Mon Compte</a></li>
+                    <li><a class="text">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="titreHaut">
+                <h1>Bienvenue à bord</h1>
+                <h4>Locations voitures 24h/24 et 7j/7</h4>
+            </div>
+
+        </div>
+
+            <div class="container">
+            <nav class="navbar navbar-expand-lg" style="background-color: rgba(157, 155, 155, 0.543);">
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Adresse de départ
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+
+                    <input id="date" type="date" value="2017-06-01" />
+                    <input id="date" type="date" value="2017-06-01" />
+
+                </div>
+
+                    <button type="button" class="btn">Valider ma recherche</button>
+
+            </div>
+            
+            </nav>
+
+    </header>
+
+    <main>
+
+        <div class="sliders">
+
+        <h3>7 Résultats</h3>   
+
+        <div class="btn-group1">
+            <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Prix Croissant
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Prix Décroissant</a></li>
+            </ul>       
+        </div>
+        
+        <div id="carouselExample1" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Annexes/vehicule1.png" class="d-block w-100" alt="Peugeot">
+    </div>
+    <div class="carousel-item">
+      <img src="./Annexes/vehicule1.png" class="d-block w-100" alt="Peugeot">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+    <i class="fa-solid fa-caret-right fa-rotate-180 fa-lg" style="color: #000000;"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+    <i class="fa-solid fa-caret-right fa-lg" style="color: #000000;"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+  <div class="textCarousel">
+
+    <h4>Peugeot 208</h4>
+    <p>Diesel , 5 portes , GPS , AutoRadio , Forfait 1000km (0,5km/h supplémentaires),</p>
+    <p>999€</p>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+    aria-expanded="false" style="background-color: rgb(44, 167, 44);">
+    Réserver et payer
+    </button>
+
+  </div>
+</div>
+
+    <div id="carouselExample2" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Annexes/vehicule2.png" class="d-block w-100" alt="Ford">
+    </div>
+    <div class="carousel-item">
+      <img src="./Annexes/vehicule2.png" class="d-block w-100" alt="Ford">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+    <i class="fa-solid fa-caret-right fa-rotate-180 fa-lg" style="color: #000000;"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+    <i class="fa-solid fa-caret-right fa-lg" style="color: #000000;"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+    <div class="textCarousel">
+
+    <h4>Ford Focus</h4>
+    <p>Diesel , 5 portes , GPS , AutoRadio , Forfait 1000km (0,5km/h supplémentaires),</p>
+    <p>999€</p>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+    aria-expanded="false" style="background-color: rgb(44, 167, 44);">
+    Réserver et payer
+    </button>
+
+  </div>
+</div>
+
+        <div id="carouselExample3" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Annexes/vehicule3.png" class="d-block w-100" alt="Audi">
+    </div>
+    <div class="carousel-item">
+      <img src="./Annexes/vehicule3.png" class="d-block w-100" alt="Audi">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3" data-bs-slide="prev">
+    <i class="fa-solid fa-caret-right fa-rotate-180 fa-lg" style="color: #000000;"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3" data-bs-slide="next">
+    <i class="fa-solid fa-caret-right fa-lg" style="color: #000000;"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+    <div class="textCarousel">
+
+    <h4>Audi A1</h4>
+    <p>Diesel , 5 portes , GPS , AutoRadio , Forfait 1000km (0,5km/h supplémentaires),</p>
+    <p>999€</p>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+    aria-expanded="false" style="background-color: rgb(44, 167, 44);">
+    Réserver et payer
+    </button>
+
+  </div>
+</div>
+
+    <div id="carouselExample4" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./Annexes/vehicule4.png" class="d-block w-100" alt="Opel">
+    </div>
+    <div class="carousel-item">
+      <img src="./Annexes/vehicule4.png" class="d-block w-100" alt="Opel">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample4" data-bs-slide="prev">
+    <i class="fa-solid fa-caret-right fa-rotate-180 fa-lg" style="color: #000000;"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample4" data-bs-slide="next">
+    <i class="fa-solid fa-caret-right fa-lg" style="color: #000000;"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+    <div class="textCarousel">
+
+    <h4>Opel Mokka</h4>
+    <p>Diesel , 5 portes , GPS , AutoRadio , Forfait 1000km (0,5km/h supplémentaires),</p>
+    <p>999€</p>
+    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+    aria-expanded="false" style="background-color: rgb(44, 167, 44);">
+    Réserver et payer
+    </button>
+
+  </div>
+</div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="basdePage">
+
+            <img src="./Annexes/agence.jpg" alt="agence">
+
+            <p>
+                Notre agence de <b>Paris</b> <br>
+                300 boulevard de veaugirard, 75015, Paris <br>
+                Ouvert 7j/7 de 09h à 13h et de 14h à 20h <br>
+                01 49 78 21 23 <br>
+                contact@vtc.com 
+            </p>
+
+        </div>
+
+    </footer>
+
+<script src="./js/script.js"></script>
+
+</body>
+
+</html>
