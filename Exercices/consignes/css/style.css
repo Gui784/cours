@@ -1,0 +1,232 @@
+*{
+
+    margin:  0;
+    padding: 0;
+
+}
+
+body{
+
+    font-family: 'Lato', sans-serif;
+
+}
+
+.nav{
+
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    
+
+}
+
+.nav li a{
+
+    color: white;
+
+}
+
+.nav li:hover{
+
+    border: 1px solid white;
+
+}
+
+.nav li a:hover{
+
+    color: gray;
+
+}
+
+.nav li{
+
+    padding: 30px;
+
+}
+
+header{
+
+    background: url(../img/dinosaure.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.haut{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.haut img{
+
+    margin-top: 100px;
+   
+
+}
+
+.milieu img:hover{
+
+    transform: scale(1.5);
+    transition: all .5s;
+
+}
+
+.haut li button{
+
+    padding: 2px 20px;
+    margin-top: 5px;
+    background-color: rgb(28, 95, 129);
+    color: white;
+    border: none;
+
+}
+
+.haut li button i{
+
+    padding: 5px;
+
+}
+
+h1{
+
+    padding-top: 60px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+h2{
+
+    text-transform: uppercase;
+
+}
+
+.milieu{
+
+    width: 50%;
+    margin: auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.milieu img{
+
+    padding-bottom: 30px;
+    transition: all .5s;
+
+}
+
+.milieu button{
+
+    padding: 8px 20px;
+    width: 20%;
+    background-color: rgb(28, 95, 129);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+
+
+}
+
+h3{
+
+    text-align: center;
+
+}
+
+h4{
+
+    text-transform: uppercase;
+    padding-bottom: 10px;
+
+}
+
+.milieu2{
+
+    flex-direction: row;
+    display: flex;
+    padding-top: 150px;
+    padding-left: 300px;
+
+}
+
+
+
+.tarifs{
+
+    width: 50%;
+
+}
+
+.tarifs button {
+    
+    padding: 6px 20px;
+    width: 20%;
+    background-color: rgb(28, 95, 129);
+    color: white;
+    border: none;
+    text-transform: uppercase;
+
+}
+
+.horaires{
+
+    width: 55%;
+    padding-top: 50px;
+    
+
+}
+
+.venir{
+
+    position: relative;
+    float: right;
+    width: 45%;
+
+}
+
+.partenaires{
+
+    padding-top: 50px;
+    text-align: center;
+    
+}
+
+.image{
+
+    width: 5%;
+    display: flex;
+    padding: 50px;
+
+}
+
+.image img{
+
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 50px;
+}
+
+.bas{
+
+    padding-top: 75px;
+
+}
+
+.partenaires{
+
+    width: 100%;
+
+}
+
+.partenaires img{
+
+    float: right;
+
+}
