@@ -1,4 +1,6 @@
+
 <?php
+include "../nav.php";
 
 // .. les opérateurs arithmetiques sont + - * /
 

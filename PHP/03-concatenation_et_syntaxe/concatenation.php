@@ -1,4 +1,6 @@
+
 <?php
+include "../nav.php";
 
 // 1 Concatenation simple
 

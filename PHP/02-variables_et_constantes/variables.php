@@ -1,4 +1,7 @@
+
+    
 <?php
+include "../nav.php";
 
 // une variable est un espace mémoire ( ou plus simplement une boîte) dans lequel on stokxe une information (une donnée). Cette information étant récupérable ensuite à tout  moment dans notre code
 // les information stokées dedans peuvent être des chaines de caractère (string, nombre entier (integer) float (nombre decimaal), des requetes sql, des tableaux (un array est ube sorte de variable) ou encore un booléen (on stocke ou TRUE ou FALSE dans la variable)
