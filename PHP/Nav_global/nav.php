@@ -193,7 +193,15 @@
                 <a href="../13-Sessions/session_arriver.php">Session Arrivé</a>
                 <a href="../13-Sessions/session_depart.php">Session Départ</a>
             </div>
-        </div>                              
+        </div> 
+        <div class="dropdown">
+            <button class="dropbtn">PDO_connexion
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../14-PDO_connexion/connexion.php">Connexion</a>
+            </div>
+        </div>                                       
         </div>                    
 
 </body>
