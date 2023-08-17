@@ -1,6 +1,6 @@
 
 <?php
-include "../nav.php";
+include "../Nav_global/nav.php";
 
 // La fonction utilisateur , par opposition à prédéfinie est celle qui n'existe pas.
 // Que nous allons codé pour notre propre bespoin par rapport aux fonctionnalités du site.

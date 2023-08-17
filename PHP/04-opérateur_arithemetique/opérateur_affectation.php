@@ -1,6 +1,6 @@
 
 <?php
-include "../nav.php";
+include "../Nav_global/nav.php";
 
 // les opérateur par affectation ont += -= *=  et /=
 

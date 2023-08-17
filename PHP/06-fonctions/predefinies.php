@@ -1,7 +1,6 @@
 
 <?php
-include "../nav.php";
-
+include "../Nav_global/nav.php";
 // Les fonctions prédéfinies sont celle qui sont deja codées mise à notre disposition par PHP
 
 // 1 - strlen() et iconv_strlen()

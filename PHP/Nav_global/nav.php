@@ -9,14 +9,15 @@
         /* Navbar container */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: lightslategrey;
   font-family: Arial;
+  margin-bottom: 50px;
 }
 
 /* Links inside the navbar */
 .navbar a {
   float: left;
-  font-size: 16px;
+  font-size: 12px;
   color: white;
   text-align: center;
   padding: 14px 16px;
@@ -31,7 +32,7 @@
 
 /* Dropdown button */
 .dropdown .dropbtn {
-  font-size: 16px;
+  font-size: 12px;
   border: none;
   outline: none;
   color: white;
@@ -43,7 +44,7 @@
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: blue;
 }
 
 /* Dropdown content (hidden by default) */
@@ -149,6 +150,50 @@
                 <a href="../08-boucles/boucles.php">Boucles</a>
             </div>
         </div>
+        <div class="dropdown">
+            <button class="dropbtn">Inclusion Fichier
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../09-inclusion_fichier/accueil.php">Accueil</a>
+                <a href="../09-inclusion_fichier/connexion.php">Connexion</a>
+                <a href="../09-inclusion_fichier/page.php">Page</a>
+            </div>
+        </div>  
+        <div class="dropdown">
+            <button class="dropbtn">Tableaux Array
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../10-tableaux_Array/Array.php">Array</a>
+            </div>
+        </div>  
+        <div class="dropdown">
+            <button class="dropbtn">Méthode GET
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../11-Méthode_Get/get_arriver.php">GET Arrivé</a>
+                <a href="../11-Méthode_Get/get_départ.php">GET Départ</a>
+            </div>
+        </div>  
+        <div class="dropdown">
+            <button class="dropbtn">Méthode POST
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../12-Méthode_POST/post_depart.php">POST Départ</a>
+            </div>
+        </div>   
+        <div class="dropdown">
+            <button class="dropbtn">Session
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../13-Sessions/session_arriver.php">Session Arrivé</a>
+                <a href="../13-Sessions/session_depart.php">Session Départ</a>
+            </div>
+        </div>                              
         </div>                    
 
 </body>

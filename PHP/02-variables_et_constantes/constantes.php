@@ -1,6 +1,6 @@
 
 <?php
-include "../nav.php";
+include "../Nav_global/nav.php";
 
 // sa fonctionne est similaire a celle d'une variable , elle stocke une valeur récupérable par contre cette valeur ne sera pas modifiable par la suite
 

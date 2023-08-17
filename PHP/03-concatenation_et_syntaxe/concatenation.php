@@ -1,7 +1,6 @@
 
 <?php
-include "../nav.php";
-
+include "../Nav_global/nav.php";
 // 1 Concatenation simple
 
 $prenom = 'Guillaume';

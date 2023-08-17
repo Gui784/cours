@@ -1,6 +1,6 @@
 
 <?php
-include "../nav.php";
+include "../Nav_global/nav.php";
 
 // les variables déclarées dans l'un des deux espaces ne sont pas reconnues automatiquement dans l'autre espace
 

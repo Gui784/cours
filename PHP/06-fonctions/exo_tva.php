@@ -1,6 +1,6 @@
 
 <?php
-include "../nav.php";
+include "../Nav_global/nav.php";
 
 // Exercice avec une fonction qui permet de calculer la TVA pour un prix HT.
 

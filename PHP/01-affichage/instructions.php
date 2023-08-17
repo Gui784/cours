@@ -1,6 +1,6 @@
 
 <?php
-include "../nav.php";
+include "../Nav_global/nav.php";
 
 // syntaxe au dessus pour ouvirir un passage php
 // il est conseillé de le laisser ouvert si on ne fait que du traitement PHP.

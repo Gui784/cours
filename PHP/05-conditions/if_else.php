@@ -1,7 +1,7 @@
 
 
 <?php
-include "../nav.php";
+include "../Nav_global/nav.php";
 
 // Je déclare 5 variables que je vais tester
 
