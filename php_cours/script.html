@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="texte">Texte Dynamique</h1>
+
+    <script>
+        // Tableau de couleurs possibles
+        const couleurs = ["red", "green", "blue", "orange", "purple", "yellow", "cyan" , "magenta" , "lime" , "crimson" , "midnightblue" , "turquoise" , "brown" , "grey" , "fushia"];
+        let index = 0; 
+
+        function changerCouleurTexte() {
+            const texte = document.getElementById("texte");
+            texte.style.color = couleurs[index]; 
+            index = (index + 1) ; 
+            console.log(index);
+
+            if(i > colors.length){
+                i = 0;
+            }
+
+        }
+
+        setInterval(changerCouleurTexte, 1000);
+    </script>
+    
+</body>
+</html>

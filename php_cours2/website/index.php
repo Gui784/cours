@@ -134,6 +134,7 @@
                  'titre_header' => $_POST['title_header'],                      
                  'sous_titre' => $_POST['subtitle'],
                  'titre_site' => $_POST['title'],
+                 'image' => $_POST['pictures'],
                 );
 
                 $jsonData = json_encode($data);
@@ -143,14 +144,10 @@
                 fclose($nomJSON);
 
 
+                };
 
 
-
-
-                }
-
-
-
+                
                 ?>
 
 
@@ -191,17 +188,55 @@
 
                 // ?>
 
+                
+
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Product image-->
-                            <img class="card-img-top" src="<?php echo $_POST['pictures'] ?>" alt="..." />
+                
+                <form method="POST" enctype="multipart/form-data"> 
+                    <div class="form-group">
+                        <label for="exampleInputColor">Couleur du Bandeau</label>
+                        <input type="color" class="form-control" id="exampleInputColor" name="colorFirst">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputColorTxt">Couleur du Texte</label>
+                        <input type="color" class="form-control" id="exampleInputColorTxt" name="colorSecond">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputimg">Image du produit</label>
+                        <input type="file" class="form-control" id="exampleInputimg" name="image_p">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputTxt1">Titre du produit</label>
+                        <input type="text" class="form-control" id="exampleInputTxt1" name="title_p">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputTxt2">Texte du produit</label>
+                        <input type="text" class="form-control" id="exampleInputTxt2" name="text_p">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputTxt2">Prix</label>
+                        <input type="Number" class="form-control" id="exampleInputTxt2" name="price">
+                    </div>
+                    
+                    <input type="submit" class="btn btn-primary" value="Envoyer">
+                </form>
+
+
+                            <img class="card-img-top" src="<?php echo $_POST['image'] ?>"/>
                             <!-- Product details-->
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">Popular Item</h5>
+                                    <h5 class="fw-bolder"></h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
