@@ -10,6 +10,4 @@ print_r($product);
 echo "</pre>";
 
 
-
-
 ?>
