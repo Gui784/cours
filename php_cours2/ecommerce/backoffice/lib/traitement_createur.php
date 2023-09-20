@@ -48,7 +48,7 @@ if (!empty($_POST)) {
 
      $type = $_FILES["image"]["type"];
 
-     if ($type == "image/jpeg" || $type == "image/png" || $type == "image/webp") {
+     if ($type == "image/jpeg" || $type == "image/png" || $type == "image/webp" || $type == "image/jpg") {
         
         if (move_uploaded_file( $tmpName , $imgResult )){
 
@@ -67,3 +67,4 @@ if (!empty($_POST)) {
     }
 
 }
+

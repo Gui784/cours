@@ -31,6 +31,7 @@ if(!empty($_POST));{
             $_SESSION['email'] = $user['email'];
             $_SESSION['date_register'] = $user['date_register'];
             $_SESSION['user_statut'] = $user['user_statut'];
+            $_SESSION['image'] = $user['image_user'];
 
             if($user['user_statut'] == 0){
 

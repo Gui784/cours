@@ -14,7 +14,7 @@ if (empty($_SESSION)) {
 
 require_once('lib/db.php'); // Fichier qui donne accés à la BDD 
 require_once('lib/select_product.php'); //requête SQL SELECT de la table produit
-
+require_once('lib/user_update.php');
 
 
 ?>
@@ -286,10 +286,9 @@ require_once('lib/select_product.php'); //requête SQL SELECT de la table produi
 
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?php echo $_SESSION['firstname'] . "  " . $_SESSION['lastname'] ?></span>
-                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
-                            </a>
+
+                            <?php include_once("../composant/avatar.php") ?>
+
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="profil.php">
@@ -352,16 +351,16 @@ require_once('lib/select_product.php'); //requête SQL SELECT de la table produi
                                         <div class="row no-gutters align-items-center ">
                                             <div class="col-auto">
                                                 <div class="h5 mr-3 font-weight-bold text-gray-800" style="color:#016D10 !important ; margin-bottom: 55px"><?php echo $key["stock"] ?>
-                                            </div>
+                                                </div>
                                             </div>
                                             <div class="col">
                                                 <div class="progress progress-sm mr-2 mt-4">
-                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:<?php echo $key["stock"] / 10 
-                                                    ?>%; background-color : #1cc88a !important ;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width:<?php echo $key["stock"] / 10
+                                                                                                                                                            ?>%; background-color : #1cc88a !important ;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
                                                 </div>
-                                                <a type="button" class="btn btn-info mt-2" href="../backoffice/modifier_produit.php?idproduit=<?php echo $key["id_product"] ?>"  style="background-color:#01AB32 ; color:aliceblue;" >Modifier Produit</a>
-                                                <a type="button" class="btn btn-info mt-2" href="./lib/traitement_supprimer.php?idproduit=<?php echo $key["id_product"] ?>"  style="background-color:darkred ; color:aliceblue;" >Supprimer Produit</a>
+                                                <a type="button" class="btn btn-info mt-2" href="../backoffice/modifier_produit.php?idproduit=<?php echo $key["id_product"] ?>" style="background-color:#01AB32 ; color:aliceblue;">Modifier Produit</a>
+                                                <a type="button" class="btn btn-info mt-2" href="./lib/traitement_supprimer.php?idproduit=<?php echo $key["id_product"] ?>" style="background-color:darkred ; color:aliceblue;">Supprimer Produit</a>
                                             </div>
                                         </div>
                                     </div>
