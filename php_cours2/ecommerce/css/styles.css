@@ -11285,4 +11285,10 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+
+  @media (min-width: 1025px) {
+.h-custom {
+height: 100vh !important;
+}
+}
 }

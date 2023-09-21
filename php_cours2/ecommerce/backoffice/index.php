@@ -33,6 +33,7 @@ require_once('lib/user_update.php');
     <title>SB Admin 2 - Dashboard</title>
 
     <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
@@ -84,7 +85,6 @@ require_once('lib/user_update.php');
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="../index.php">Accueil</a>
                         <a class="collapse-item" href="login.php">Login</a>
                         <a class="collapse-item" href="register.php">Register</a>
                         <a class="collapse-item" href="forgot-password.php">Forgot Password</a>
@@ -96,19 +96,24 @@ require_once('lib/user_update.php');
                 </div>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="../index.php">
+                 <i class="fas fa-home" ></i>
+                 <span>Accueil</span></a>
+            </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="tables.php">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Tables</span></a>
-            </li>
+                </li>
+                
+                <!-- Création d'un produit -->
 
-            <!-- Création d'un produit -->
-
-            <li class="nav-item">
-                <a class="nav-link" href="../backoffice/createur_produit.php">
-                    <i class="fas fa-fw fa-table"></i>
+                <li class="nav-item">
+                    <a class="nav-link" href="../backoffice/createur_produit.php">
+                        <i class="fas fa-fw fa-pencil"></i>
                     <span>Créateur de produits</span></a>
             </li>
 
@@ -359,8 +364,8 @@ require_once('lib/user_update.php');
                                                                                                                                                             ?>%; background-color : #1cc88a !important ;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                                     </div>
                                                 </div>
-                                                <a type="button" class="btn btn-info mt-2" href="../backoffice/modifier_produit.php?idproduit=<?php echo $key["id_product"] ?>" style="background-color:#01AB32 ; color:aliceblue;">Modifier Produit</a>
-                                                <a type="button" class="btn btn-info mt-2" href="./lib/traitement_supprimer.php?idproduit=<?php echo $key["id_product"] ?>" style="background-color:darkred ; color:aliceblue;">Supprimer Produit</a>
+                                                <a type="button" class="btn btn-info mt-2" href="../backoffice/modifier_produit.php?idproduit=<?php echo $key["id_product"] ?>" style="background-color:#01AB32 ; color:aliceblue;"><i class="fas fa-edit" style="margin-right: 10px;"></i>Modifier Produit</a>
+                                                <a type="button" class="btn btn-info mt-2" href="./lib/traitement_supprimer.php?idproduit=<?php echo $key["id_product"] ?>" style="background-color:darkred ; color:aliceblue;"><i class="fa fa-ban" aria-hidden="true" style="margin-right: 10px;"></i>Supprimer Produit</a>
                                             </div>
                                         </div>
                                     </div>

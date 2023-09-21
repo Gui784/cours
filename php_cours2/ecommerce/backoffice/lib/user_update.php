@@ -2,9 +2,9 @@
 
 // session_start();
 
-echo "<pre>";
-print_r($_FILES);
-echo "</pre>";
+// echo "<pre>";
+// print_r($_FILES);
+// echo "</pre>";
 
 if(!empty($_FILES)){
 

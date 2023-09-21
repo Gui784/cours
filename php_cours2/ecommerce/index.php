@@ -99,7 +99,7 @@ include_once("./composant/nav.php");
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./single_article/page_produit.php?idproduit=<?php echo $key["id_product"] ?>">Consulter</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="./single_article/page_produit.php?idproduit=<?php echo $key["id_product"] ?>"><i class="bi bi-arrow-right" style="color:black ; margin-right: 10px" ></i></i>Consulter</a></div>
                             </div>
                         </div>
                     </div>
