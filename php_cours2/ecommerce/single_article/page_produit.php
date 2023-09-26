@@ -36,7 +36,7 @@ $productSelect = mysqli_fetch_all(mysqli_query($db_connect, "SELECT * FROM `prod
 
 <body>
     <!-- Navigation-->
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-4 px-lg-5">
             <a class="navbar-brand" href="#!"><img style="height: 50px;" src="../backoffice/img/logo/logo_ia.jpg"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -82,7 +82,7 @@ $productSelect = mysqli_fetch_all(mysqli_query($db_connect, "SELECT * FROM `prod
                     if ($_SESSION['user_statut'] == 2) {
 
                 ?>
-                                        
+
 
                         <form class="d-flex">
                             <a class="btn btn-outline-dark" href="../backoffice/index.php">
@@ -94,13 +94,13 @@ $productSelect = mysqli_fetch_all(mysqli_query($db_connect, "SELECT * FROM `prod
 
                 <?php }
                 } ?>
-                    <form class="d-flex" style="margin-right: 10px;">
-                        <a class="btn btn-outline-dark" href="../backoffice/panier.php">
-                            <i class="bi bi-cart"></i>
-                            Panier
-                            <!-- <span class="badge bg-dark text-white ms-1 rounded-pill">0</span> -->
-                        </a>
-                    </form>
+                <form class="d-flex" style="margin-right: 10px;">
+                    <a class="btn btn-outline-dark" href="../backoffice/panier.php">
+                        <i class="bi bi-cart"></i>
+                        Panier
+                        <!-- <span class="badge bg-dark text-white ms-1 rounded-pill">0</span> -->
+                    </a>
+                </form>
             </div>
         </div>
     </nav>
@@ -158,17 +158,17 @@ $productSelect = mysqli_fetch_all(mysqli_query($db_connect, "SELECT * FROM `prod
                 ?>
                         <div class="col mb-5">
                             <div class="card h-100">
-                            <?php
+                                <?php
 
-                            if (!empty($related['discount'])) {
+                                if (!empty($related['discount'])) {
 
-                            ?>
+                                ?>
 
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale <?php echo " -" . $related['discount'] . "%"  ?></div>
+                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale <?php echo " -" . $related['discount'] . "%"  ?></div>
 
-                            <?php } ?>
+                                <?php } ?>
                                 <!-- Product image-->
-                                <img class="card-img-top" style="height: 200px;" src="../backoffice/img/<?php echo $related["image"] ?>"  />
+                                <img class="card-img-top" style="height: 200px;" src="../backoffice/img/<?php echo $related["image"] ?>" />
                                 <!-- Product details-->
                                 <div class="card-body p-4">
                                     <div class="text-center">
@@ -194,7 +194,7 @@ $productSelect = mysqli_fetch_all(mysqli_query($db_connect, "SELECT * FROM `prod
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="../single_article/page_produit.php?idproduit=<?php $related['id_product'] ?>">Consulter</a></div>
+                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="index.php?idproduit= <?php echo $related['id_product'] ?>">Consulter</a></div>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +204,7 @@ $productSelect = mysqli_fetch_all(mysqli_query($db_connect, "SELECT * FROM `prod
         </div>
     </section>
     <!-- Footer-->
-    <footer class="py-5 bg-dark">
+    <footer class=" py-5 bg-dark">
         <div class="container">
             <p class="m-0 text-center text-white">Copyright &copy; Your Website 2021</p>
         </div>

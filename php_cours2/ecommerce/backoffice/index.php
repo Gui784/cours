@@ -350,7 +350,7 @@ require_once('lib/user_update.php');
                                                 <p style="color: #01AB32; margin-top: 12px ; font-size:18px ;"><?php echo $key["price"] . "€" ?></p>
                                             </div>
                                             <div class="col-auto">
-                                                <i class="fas fa-euro-sign fa-2x text-gray-300"></i>
+                                               <a type="button" ><i class="fas fa-euro-sign fa-2x text-300" id="euroIcon" style="color: #01AB32;"></i></a> 
                                             </div>
                                         </div>
                                         <div class="row no-gutters align-items-center ">
@@ -721,7 +721,7 @@ require_once('lib/user_update.php');
             </div>
         </div>
     </div>
-
+    
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -738,6 +738,8 @@ require_once('lib/user_update.php');
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+
+    
 
 </body>
 

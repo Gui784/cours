@@ -4,17 +4,17 @@ session_start();
 
 require_once("db.php");
 
-echo "<pre>";
-print_r($_POST);
-echo "</pre>";
+// echo "<pre>";
+// print_r($_POST);
+// echo "</pre>";
 
-echo "<pre>";
-print_r($_SESSION);
-echo "</pre>";
+// echo "<pre>";
+// print_r($_SESSION);
+// echo "</pre>";
 
-echo "<pre>";
-print_r($_FILES);
-echo "</pre>";
+// echo "<pre>";
+// print_r($_FILES);
+// echo "</pre>";
 
 if (!empty($_POST)) {
 
@@ -53,6 +53,7 @@ if (!empty($_POST)) {
         if (move_uploaded_file( $tmpName , $imgResult )){
 
         echo "Image uploadé avec succés " ; 
+        
         header("Location: ../index.php");
 
 
