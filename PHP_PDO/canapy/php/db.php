@@ -1,5 +1,7 @@
 <?php 
 
+session_start();
+
 $user = "root";
 $pass = "";
 $db_name = "canapy" ;
@@ -8,7 +10,7 @@ $server = "localhost";
 $host = $_SERVER['HTTP_HOST'];
 
 try {
-    $dbh = new PDO("mysql:host=$server;dbname=$db_name", $user, $pass);
+    $db = new PDO("mysql:host=$server;dbname=$db_name", $user, $pass);
 } catch (PDOException $e) {
 
     $error_msg = "<p style='color:red'>" . $e->getMessage() . "</p>";    

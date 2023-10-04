@@ -1,18 +1,32 @@
 <?php
 
+
+
 require_once('php/db.php');
-require_once("./php/class/Article.php");
+require_once("php/class/User.php");
 
-if (!empty($_POST)){
+// session_start();
 
-if (!empty($_POST['price']) && !empty($_POST['title']) && !empty($_FILES)) {
+echo "<pre>";
+print_r($_POST);
+echo "</pre>";
 
-$classArticle = new Article($db);
-$classArticle->insert($_POST , $_FILES);
+$user = new User($db);
 
-}
+    if (!empty($_POST)) {
 
-}
+        if ($_POST['formulaire'] == "Connexion") {
+
+            // echo "Formulaire D'inscription" ; 
+            $user->login($_POST);
+
+        } else {
+
+            // echo "Formulaire de connexion" ; 
+
+        }
+    }
+
 
 ?>
 
@@ -48,7 +62,7 @@ $classArticle->insert($_POST , $_FILES);
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h1>Ajout d'un article via PDO</h1>
+                        <h1>Connectez Vous </h1>
                     </div>
                 </div>
             </div>
@@ -63,34 +77,31 @@ $classArticle->insert($_POST , $_FILES);
 
             <div class="block">
                 <div class="row justify-content-center">
+
+
                     <div class="col-md-8 col-lg-8 pb-4">
 
-                        <form method="post" enctype="multipart/form-data">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label class="text-black" for="fname">Titre de l'article</label>
-                                        <input type="text" class="form-control" name="title">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label class="text-black" for="lname">Prix</label>
-                                        <input type="number" class="form-control" step="0.01" name="price">
-                                    </div>
+
+
+                        <form method="post">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-black" for="email">Adresse Email</label>
+                                    <input type="email" class="form-control" step="0.01" name="email">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label class="text-black" for="email">Image de l'article</label>
-                                <input type="file" class="form-control" name="image">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-black" for="password">Mot de passe</label>
+                                    <input type="text" class="form-control" step="0.01" name="password">
+                                </div>
                             </div>
-
-                            <div class="form-group mb-5">
-
-                            </div>
-
-                            <input type="submit" class="btn btn-primary-hover-outline" value="Ajouter l'article">
+                            <br>
+                            <input type="submit" class="btn btn-primary-hover-outline" name="formulaire" value="Connexion">
                         </form>
+                        <br>
+                        <p>Vous n'avez pas de compte ?</p>
+                        <a href="register.php">Inscrivez vous !</a>
 
                     </div>
 
@@ -102,7 +113,7 @@ $classArticle->insert($_POST , $_FILES);
 
 
     </div>
-  
+
 
     <!-- End Contact Form -->
 

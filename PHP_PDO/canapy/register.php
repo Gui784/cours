@@ -1,17 +1,28 @@
 <?php
 
+
+
 require_once('php/db.php');
-require_once("./php/class/Article.php");
+require_once("php/class/User.php");
 
-if (!empty($_POST)){
+// echo "<pre>";
+// print_r($_POST);
+// echo "</pre>";
 
-if (!empty($_POST['price']) && !empty($_POST['title']) && !empty($_FILES)) {
+$user = new User($db);
 
-$classArticle = new Article($db);
-$classArticle->insert($_POST , $_FILES);
 
-}
+if (!empty($_POST)) {
 
+    if ($_POST['formulaire'] == "Inscription") {
+
+        // echo "Formulaire D'inscription" ; 
+        $user->register($_POST);
+    } else {
+
+        // echo "Formulaire de connexion" ; 
+
+    }
 }
 
 ?>
@@ -48,7 +59,7 @@ $classArticle->insert($_POST , $_FILES);
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h1>Ajout d'un article via PDO</h1>
+                        <h1>Inscrivez Vous</h1>
                     </div>
                 </div>
             </div>
@@ -60,49 +71,52 @@ $classArticle->insert($_POST , $_FILES);
     <!-- Start Contact Form -->
     <div class="untree_co-section">
         <div class="container">
-
             <div class="block">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-lg-8 pb-4">
-
-                        <form method="post" enctype="multipart/form-data">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label class="text-black" for="fname">Titre de l'article</label>
-                                        <input type="text" class="form-control" name="title">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label class="text-black" for="lname">Prix</label>
-                                        <input type="number" class="form-control" step="0.01" name="price">
-                                    </div>
+                        <form method="post">
+                            <div class="col-6 ">
+                                <div class="form-group">
+                                    <label class="text-black" for="lname">Nom</label>
+                                    <input type="text" class="form-control" name="lastname">
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <label class="text-black" for="email">Image de l'article</label>
-                                <input type="file" class="form-control" name="image">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-black" for="fname">Prénom</label>
+                                    <input type="text" class="form-control" step="0.01" name="firstname">
+                                </div>
                             </div>
-
-                            <div class="form-group mb-5">
-
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-black" for="email">Adresse Email</label>
+                                    <input type="email" class="form-control" step="0.01" name="email">
+                                </div>
                             </div>
-
-                            <input type="submit" class="btn btn-primary-hover-outline" value="Ajouter l'article">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-black" for="password">Mot de passe</label>
+                                    <input type="text" class="form-control" step="0.01" name="password">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label class="text-black" for="password">Répéter le mot de passe</label>
+                                    <input type="text" class="form-control" step="0.01" name="repeatPassword">
+                                </div>
+                            </div>
+                            <br>
+                            <input type="submit" class="btn btn-primary-hover-outline" name="formulaire" value="Inscription">
                         </form>
-
+                        <br>
+                        <p>Vous avez déja un compte ?</p>
+                        <a href="login.php">Connectez-vous !</a>
                     </div>
-
                 </div>
-
             </div>
-
         </div>
-
-
     </div>
-  
+
 
     <!-- End Contact Form -->
 

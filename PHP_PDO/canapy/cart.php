@@ -5,6 +5,16 @@
 * Template URI: https://untree.co/
 * License: https://creativecommons.org/licenses/by/3.0/
 */ -->
+
+<?php 
+
+require_once("php/db.php");
+require_once("php/class/Article.php");
+
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -30,7 +40,7 @@
 	<!-- Start Header/Navigation -->
 	<?php
 
-	include("../composant/nav.php");
+	include("composant/nav.php");
 
 	?>
 	<!-- End Header/Navigation -->

@@ -1,23 +1,17 @@
-<?php
+<?php 
 
-require_once('php/db.php');
-require_once("./php/class/Article.php");
+require_once("php/db.php");
+require_once("php/class/Article.php");
 
-if (!empty($_POST)){
-
-if (!empty($_POST['price']) && !empty($_POST['title']) && !empty($_FILES)) {
+$idArticle = $_GET['id_article'];
 
 $classArticle = new Article($db);
-$classArticle->insert($_POST , $_FILES);
-
-}
-
-}
+$article = $classArticle->selectbyId($idArticle);
 
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
@@ -39,16 +33,17 @@ $classArticle->insert($_POST , $_FILES);
 <body>
 
     <!-- Start Header/Navigation -->
-    <?php include('composant/nav.php'); ?>
-    <!-- End Header/Navigation -->
 
+    <?php include('composant/nav.php'); ?>
+
+    <!-- End Header/Navigation -->
     <!-- Start Hero Section -->
     <div class="hero">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h1>Ajout d'un article via PDO</h1>
+                        <h1>Shop</h1>
                     </div>
                 </div>
             </div>
@@ -56,56 +51,23 @@ $classArticle->insert($_POST , $_FILES);
     </div>
     <!-- End Hero Section -->
 
+    <?php
 
-    <!-- Start Contact Form -->
-    <div class="untree_co-section">
+    if (isset($error_msg)) {
+        echo $error_msg;
+    }
+
+    ?>
+
+    <div class="untree_co-section product-section before-footer-section">
         <div class="container">
+            <div class="row">
 
-            <div class="block">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-8 pb-4">
-
-                        <form method="post" enctype="multipart/form-data">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label class="text-black" for="fname">Titre de l'article</label>
-                                        <input type="text" class="form-control" name="title">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="form-group">
-                                        <label class="text-black" for="lname">Prix</label>
-                                        <input type="number" class="form-control" step="0.01" name="price">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label class="text-black" for="email">Image de l'article</label>
-                                <input type="file" class="form-control" name="image">
-                            </div>
-
-                            <div class="form-group mb-5">
-
-                            </div>
-
-                            <input type="submit" class="btn btn-primary-hover-outline" value="Ajouter l'article">
-                        </form>
-
-                    </div>
-
-                </div>
+                <?php include('composant/article_by_id.php'); ?>
 
             </div>
-
         </div>
-
-
     </div>
-  
-
-    <!-- End Contact Form -->
-
 
 
     <!-- Start Footer Section -->
@@ -197,7 +159,7 @@ $classArticle->insert($_POST , $_FILES);
                     <div class="col-lg-6">
                         <p class="mb-2 text-center text-lg-start">Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
-                            </script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a hreff="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
+                            </script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
                         </p>
                     </div>
 
