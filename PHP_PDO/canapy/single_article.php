@@ -1,12 +1,25 @@
-<?php 
+<?php
 
 require_once("php/db.php");
 require_once("php/class/Article.php");
+require_once("php/class/Orders.php");
 
 $idArticle = $_GET['id_article'];
 
 $classArticle = new Article($db);
 $article = $classArticle->selectbyId($idArticle);
+
+$classOrders = new Orders($db);
+
+
+if (!empty($_POST)) {
+
+    // $articleSelect=$classArticle->articleSession($_POST);
+
+    $classOrders->newOrder($_POST , $_SESSION);
+
+ }
+
 
 ?>
 
@@ -61,12 +74,12 @@ $article = $classArticle->selectbyId($idArticle);
 
     <div class="untree_co-section product-section before-footer-section">
         <div class="container">
-            <div class="row">
+            <div class="row"></div>
 
-                <?php include('composant/article_by_id.php'); ?>
+            <?php include('composant/article_by_id.php'); ?>
 
-            </div>
         </div>
+    </div>
     </div>
 
 

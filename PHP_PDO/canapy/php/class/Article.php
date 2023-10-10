@@ -80,4 +80,23 @@ Class Article{
         
     } 
 
+       public function articleSession($form){
+
+        // // $form = $_POST (formulaire caché)
+
+        if(!array_key_exists('orders' , $_SESSION)){
+
+           $_SESSION['orders'] = array();
+
+        }
+
+        $_SESSION['orders'] = array_merge($_SESSION['orders'] , array($form));
+
+        echo "<pre>";
+        print_r($_SESSION);
+        echo "</pre>";
+
+
+       }
+
 }

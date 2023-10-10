@@ -53,7 +53,7 @@ Class User{
 
             // echo "Email deja existant" ; 
 
-          }
+        }
    
         } else {
 
